@@ -1,0 +1,110 @@
+* {
+    font-family: "Open Sans Pro", "Source Sans Pro", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    margin: 0;
+    overflow: hidden;
+}
+
+b {
+    font-weight: 700;
+}
+
+a, a:active, a:hover, a:link, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+    outline: 0;
+}
+
+.app {
+    min-height: 100%;
+    /*background-color: #ecf0f5;*/
+}
+
+.container {
+    width: 100%;
+    padding: 220px 10px 0;
+    box-sizing: border-box; 
+    min-height: 100vh;
+    transition: padding 0.2s linear;
+}
+
+.container--shrink {
+    padding-top: 120px;
+}
+
+.btn {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 34px;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    white-space: nowrap;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.btn__primary {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+    color: #FFF;
+}
+.btn__primary:hover {
+    background-color: #367fa9;
+    border-color: #204d74;
+}
+
+.btn__danger {
+    background-color: #F44336;
+    border-color: #d32f2f;
+    color: #FFF;
+}
+.btn__danger:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+.form-control {
+    flex-grow: 100;
+    padding: 6px 12px;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}       
+.fa {
+    transition: all 0.2s linear;
+}
+
+.right {
+    float: right;
+}
+
+/**
+ * DROPZONE
+ */
+.dropzone {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+    background-color: #d32f2f;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    color: #FFF;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+}
